@@ -1,0 +1,15 @@
+{
+	"name": "adls_gen2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://clinicanalytics.dfs.core.windows.net/",
+			"credential": {
+				"referenceName": "cred-uami-adls",
+				"type": "CredentialReference"
+			}
+		}
+	}
+}

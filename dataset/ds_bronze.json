@@ -1,0 +1,29 @@
+{
+	"name": "ds_bronze",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls_gen2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().folderName",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

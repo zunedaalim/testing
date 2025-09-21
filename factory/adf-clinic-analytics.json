@@ -1,0 +1,15 @@
+{
+	"name": "adf-clinic-analytics",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned,UserAssigned",
+		"principalId": "37584ae2-b70a-4803-8cb2-64606b9f604b",
+		"tenantId": "fd458adf-b456-4188-95ff-296a295cd05e",
+		"userAssignedIdentities": {
+			"/subscriptions/19832db5-69ed-4d06-8ca7-76767d87903a/resourcegroups/zuned-resource/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uami": {
+				"clientId": "4d3f2c4a-79ba-4c50-bafe-ef64f76e2fc0",
+				"principalId": "cea0bff4-24c6-43ab-88e4-bbbb133126bd"
+			}
+		}
+	}
+}
